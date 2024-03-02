@@ -1,0 +1,48 @@
+.container-medium-card{
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 100%;
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container-medium-card:hover{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    transition: transform .2s;  /* Animation */
+    transform: scale(1.2);      /* Animation */
+}
+
+.container-medium-card-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+}
+
+.medium-card-photo > img{
+    width: 300px;
+    margin: 15px;
+
+    border-radius: 15px;
+}
+
+.medium-card-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.medium-card-title > h1 {
+    font-weight: 400;
+}
+
+.medium-card-title > P {
+    font-weight: bold;
+    color: gray;
+}

@@ -1,0 +1,33 @@
+<div class="container-small-card">
+    
+    <div class="container-small-card-content">
+
+        <div class="small-card-photo">
+            <img 
+                src="{{photoCover}}" 
+                alt="image_">
+        </div>
+
+        
+
+        <div class="small-card-title">
+            <h1>{{cardTitle}}</h1>
+        </div>
+
+    </div>
+
+    <div class="container-small-card-footer">
+
+        <div class="container-small-card-tag">
+            <li 
+            *ngFor="let t of tagName; let i = index">
+                    {{tagName[i]}}
+            </li>
+        </div>
+
+        <a [routerLink]="['content', Id]">See more +</a>
+    
+    </div>
+
+
+</div>

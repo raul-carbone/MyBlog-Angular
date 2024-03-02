@@ -1,0 +1,122 @@
+.container-small-card{
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 100%;
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-small-card:hover{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    transition: transform .2s;  /* Animation */
+    transform: scale(1.1);      /* Animation */
+}
+
+.container-small-card-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.small-card-photo{
+    border-radius: 20px;
+}
+
+.small-card-photo > img{
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    margin: 15px 15px 0 15px;
+
+    border-radius: 15px;
+}
+
+.small-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+.small-card-title > h1 {
+    font-weight: 400;
+}
+
+.container-small-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.container-small-card-tag{
+    margin: 10px 10px;
+    display: flex;
+    width: 70%;
+}
+
+
+.container-small-card-tag>li {
+    padding: 3px 15px;
+    border-radius: 20px;
+    margin-left: 5px;
+
+    list-style: none;
+    color: black;
+    font-weight: 600;
+
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+}
+
+.container-small-card-tag>li:hover{
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+
+    position: relative;
+    top: 1px;
+}
+
+
+.container-small-card-footer > a {
+    padding: 3px 15px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+
+    color: black;
+    font-weight: 600;
+}
+
+.container-small-card-footer>a:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+}
+
+.container-small-card-footer>a:active{
+    position: relative;
+    top: 1px;
+}
